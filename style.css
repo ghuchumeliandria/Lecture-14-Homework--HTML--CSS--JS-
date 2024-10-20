@@ -141,10 +141,10 @@ form {
 
 /* RESPONSIVE */
 
-@media (max-width: 950px){
+@media (max-width: 950px) and (min-width: 375px){
    .main-container{
     flex-direction: column-reverse;
-    width: 375px;
+    width: 100%;
     height: auto;
     gap: 40px;
     padding: 0;

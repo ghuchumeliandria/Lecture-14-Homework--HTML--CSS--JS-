@@ -78,9 +78,9 @@ body {
 
 /* RESPONSIVE */
 
-@media(max-width: 555px){
+@media(max-width: 555px) and (min-width: 375px){
     .main-container{
-        width: 375px;
+        width: 100%;
         height: auto;
         padding: 149px 0 24px;
         border-radius: 0;
