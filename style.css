@@ -3,7 +3,7 @@
   box-sizing: border-box;
   margin: 0;
   font-family: "Roboto", sans-serif;
-  font-weight: 300;
+  font-weight: 500;
   font-style: normal;
 }
 body {
@@ -64,7 +64,6 @@ body {
 .check-icon {
   width: 21px;
   height: 21px;
-  object-fit: cover;
 }
 form {
   width: 100%;
@@ -75,25 +74,26 @@ form {
 }
 .input-side {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   gap: 8px;
 }
 .input-labels{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+    width: 50%;
+    display: inline-block;    
 }
 .default-label, .error-text {
+  display: inline-block;
   color: #242742;
   font-size: 13px;
   font-weight: 700;
+  width: 40%;
 }
 .error-text{
     color: red;
     display: none;
 }
 .form-input {
-    width: 376px;
+    width: 100%;
     height: 56px;
     padding-left: 20px;
     color: #242742;
@@ -103,7 +103,7 @@ form {
     border-radius: 8px;
 }
 .subscribe-btn {
-    width: 376px;
+    width: 100%;
     height: 56px;
     display: flex;
     justify-content: center;
@@ -121,11 +121,6 @@ form {
     box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.50);
     background-image: linear-gradient(#FF6A3A , #FF527B);
 }
-.img-section{
-    width: 400px;
-    height: 593px;
-    background-color: black;
-}
 .form-input:focus{
     border: 2px solid #FF527B;
     outline: none;
@@ -135,5 +130,42 @@ form {
     color:#FF527B;
 }
 .form-input:focus + .error-text{
-    display: block;
+    display: inline-block;
+}
+.img-section{
+    width: 400px;
+    height: 593px;
+    background-image: url(./images/image_1.png);
+    background-size: cover;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 950px){
+   .main-container{
+    flex-direction: column-reverse;
+    width: 375px;
+    height: auto;
+    gap: 40px;
+    padding: 0;
+    border-radius: 0;
+   }
+   .img-section{
+    width: 100%;
+    height: 284px;
+    background-color: #FF527B;
+    background-size: cover;
+    border-radius: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+   }
+   .form-container{
+    width: 327px;
+    height: 478px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+   }
+   .form-heading{
+    font-size: 40px;
+   }
 }

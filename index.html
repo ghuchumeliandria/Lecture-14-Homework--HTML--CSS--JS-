@@ -7,6 +7,8 @@
     <title>Document</title>
   </head>
   <body>
+    <!-- მგონი ყველაფერი კარგია უბრალოდ ერორ ტექსტი ვერ დავსვი თავის ადგილას
+     და ორშაბათს ვახოსთან გავივლი მაგ საკითხს  -->
     <div class="main-container">
       <div class="form-container">
         <h1 class="form-heading">Stay updated!</h1>
@@ -17,7 +19,7 @@
           <div class="form-content-text">
             <div class="text-div">
               <img
-                src="./images/check.png"
+                src="./images/check.svg"
                 alt="check-icon"
                 class="check-icon" />
               <p class="text-div-paragraph">
@@ -26,7 +28,7 @@
             </div>
             <div class="text-div">
               <img
-                src="./images/check.png"
+                src="./images/check.svg"
                 alt="check-icon"
                 class="check-icon" />
               <p class="text-div-paragraph">
@@ -35,7 +37,7 @@
             </div>
             <div class="text-div">
               <img
-                src="./images/check.png"
+                src="./images/check.svg"
                 alt="check-icon"
                 class="check-icon" />
               <p class="text-div-paragraph">And much more!</p>
@@ -44,18 +46,19 @@
 
           <form>
             <div class="input-side">
-              <div class="input-labels">
-                <label for="email" class="default-label">Email addres</label>
-                <label for="email" class="error-text">Valid email required</label>
-            </div>
               <input class="form-input"
-                type="email"
-                name="email"
-                id="email"
-                placeholder="email@andriamagaria.com"
-                required />
+              type="email"
+              name="email"
+              id="email"
+              placeholder="email@andriamagaria.com"
+              required />
+              <label for="email" class="error-text">Valid email required</label>
+              <!-- <div class="input-labels">
+              </div>  -->
+              <label for="email" class="default-label">Email addres</label>
+              
             </div>
-            <a href="" class="subscribe-btn">Subscribe to monthly newsletter</a>
+            <a href="./pages/scnd-page.html" class="subscribe-btn">Subscribe to monthly newsletter</a>
           </form>
         </div>
       </div>
